@@ -1,0 +1,1359 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: Assistant, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.submit-button-container {
+  background-color: #fff6df;
+  margin: 14px auto;
+  height: 58px;
+  width: 254px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.submit-button-container button {
+  color: black;
+  width: 98.9%;
+  height: 93.8%;
+  font-size: 36.8px;
+  font-weight: 500;
+  text-align: center;
+  outline: 2px solid #00b8d4;
+  background-color: #fff6df;
+  border: none;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.checkbox-container label {
+  font-size: 12.9px;
+}
+
+.agreement-links-container {
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.career1-line {
+  background-color: #4AC694;
+}
+
+.career2-line {
+  background-color: #A3B6CC;
+}
+
+.career3-line {
+  background-color: #3A5998;
+}
+
+.career4-line {
+  background-color: #316CFF;
+}
+
+.career5-line {
+  background-color: #F9CF58;
+}
+
+.career6-line {
+  background-color: #9DA6E9;
+}
+
+.career7-line {
+  background-color: #8E8E93;
+}
+
+.career8-line {
+  background-color: #475F8E;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 925px) {
+  .header {
+    padding-top: 0px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    justify-content: center;
+  }
+}
+@media (min-width: 925px) {
+  .header > :first-child {
+    display: flex;
+  }
+}
+.header button {
+  padding: 0;
+  border: none;
+  background-color: white;
+  margin: 7px 0 6px 10px;
+}
+.header button div {
+  background-color: #213a7f;
+  width: 40px;
+  height: 5px;
+  border-radius: 30px;
+  margin: 7px 0;
+  transition: transform 0.3s linear;
+}
+.header button:hover {
+  cursor: pointer;
+}
+@media (min-width: 925px) {
+  .header button {
+    display: none;
+  }
+}
+.header .menu-button-clicked {
+  gap: 0;
+  height: 35px;
+  width: 35px;
+  padding-left: 40px;
+}
+.header .menu-button-clicked :first-child {
+  margin: 0;
+  transform: rotate(45deg);
+  position: relative;
+  top: 6px;
+  left: 1px;
+}
+.header .menu-button-clicked :last-child {
+  margin: 0;
+  transform: rotate(-45deg);
+}
+.header .menu-button-clicked :nth-child(2) {
+  display: none;
+}
+.header ul {
+  display: none;
+}
+@media (min-width: 925px) {
+  .header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+  }
+}
+@media (min-width: 925px) {
+  .header ul > :first-child {
+    display: none;
+  }
+}
+.header ul > li {
+  cursor: pointer;
+  user-select: none;
+}
+.header ul > li a {
+  color: black;
+  text-decoration-line: none;
+}
+@media (min-width: 925px) {
+  .header ul > li::before {
+    content: " | ";
+    font-size: 1.5rem;
+    margin-right: 3px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 925px) {
+  .header ul > li:hover,
+  .header ul #careers:hover {
+    color: rgb(2, 2, 98);
+    font-size: 16.3px;
+    font-weight: bold;
+  }
+}
+.header .menu {
+  list-style: none;
+  display: block;
+  padding: 0;
+  font-size: 20px;
+}
+.header .menu li {
+  padding: 17px 22px;
+  cursor: pointer;
+}
+
+.header-triangle-container {
+  display: flex;
+}
+.header-triangle-container .header-triangle {
+  margin: 10px 3.25px -12.75px 3.25px;
+  height: 0px;
+  width: 0px;
+  border-top: 4.5px solid black;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+}
+@media (max-width: 925px) {
+  .header-triangle-container .header-triangle {
+    margin: 9.5px 8px 8px 8px;
+  }
+}
+
+.career-links-container > div {
+  background-color: #213a7f;
+  position: absolute;
+  width: 760px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 40px 15px 40px;
+}
+.career-links-container > div > div > li {
+  margin-bottom: 14px;
+}
+.career-links-container > div > div > li:hover {
+  display: inline-block;
+  background-color: white;
+  color: rgb(2, 2, 98);
+}
+
+@media (min-width: 925px) {
+  #careers {
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 925px) {
+  #career-links-container .horizontal-line {
+    position: absolute;
+    width: calc(98.9% - 15px);
+    border-bottom: 1px dashed green;
+    margin-right: 22px;
+  }
+}
+
+#logo-container {
+  cursor: pointer;
+  position: relative;
+  width: 132.5px;
+  height: 60px;
+  margin-top: -7px;
+  margin-bottom: -6px;
+}
+@media (min-width: 925px) {
+  #logo-container {
+    width: 165.63px;
+    height: 75px;
+    margin: 0;
+    top: 5px;
+    right: 0;
+    margin: 0 -32px 5px 0;
+  }
+}
+#logo-container div {
+  position: absolute;
+  font-size: 9.6px;
+  color: #7e685A;
+  font-weight: 700;
+  right: 15px;
+  bottom: 10.2px;
+  width: 132.5px;
+}
+@media (min-width: 925px) {
+  #logo-container div {
+    right: 21.7px;
+    bottom: 15.2px;
+  }
+}
+#logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-nav {
+  width: 100%;
+  background: linear-gradient(155deg, #154b9c, #213b7f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media (min-width: 925px) {
+  .first-nav {
+    margin-top: 65px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 925px) {
+  .first-nav {
+    height: 130px;
+  }
+}
+.first-nav :first-child {
+  font-size: 10vw;
+  line-height: 1;
+  font-weight: 600;
+}
+@media (min-width: 450px) {
+  .first-nav :first-child {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 925px) {
+  .first-nav :first-child {
+    line-height: 0.8;
+    font-size: 90px;
+  }
+}
+.first-nav :last-child {
+  font-size: 15vw;
+  font-weight: 800;
+  line-height: 1;
+}
+@media (min-width: 450px) {
+  .first-nav :last-child {
+    font-size: 66px;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 925px) {
+  .first-nav :last-child {
+    font-size: 120px;
+    line-height: 0.8;
+  }
+}
+
+.second-nav-container {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+}
+@media (min-width: 1205px) {
+  .second-nav-container {
+    justify-content: center;
+  }
+}
+.second-nav-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19.2px;
+  background-color: #eff6df;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 925px) {
+  .second-nav-container > div {
+    width: 1110px;
+    position: relative;
+    left: 8px;
+  }
+}
+
+.middle-form {
+  display: none;
+}
+@media (min-width: 925px) {
+  .middle-form {
+    display: inline-block;
+    width: 33vw;
+    max-width: 336px;
+    min-width: 290px;
+    max-height: 505px;
+    height: 505px;
+    min-height: 505px;
+    background: linear-gradient(155deg, #154b9c, #213b7f);
+    color: white;
+    font-weight: bold;
+  }
+}
+.middle-form .form-title-container {
+  width: 250px;
+  margin: auto;
+}
+.middle-form .form-title-container h2 {
+  font-size: 24px;
+  margin-top: 8px;
+}
+.middle-form .input-container {
+  height: 60px;
+  width: 250px;
+  margin: 25px auto;
+  display: flex;
+  color: #373737;
+}
+.middle-form .input-container input {
+  height: 100%;
+  width: 70%;
+  border: none;
+}
+.middle-form .input-container input:focus {
+  outline: none;
+}
+.middle-form .input-container label {
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  height: 100%;
+  width: calc(30% - 3px);
+  font-size: 14.4px;
+}
+.middle-form .input-container .seperator-container {
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.middle-form .input-container .seperator-container > div {
+  background-color: #213b7f;
+  width: 100%;
+  border-radius: 20px;
+  height: 40%;
+}
+.middle-form .checkbox-container {
+  height: 10%;
+}
+.middle-form .checkbox-container input {
+  margin: 3px 3px 17.8px 4px;
+}
+
+.careers-images-container {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+@media (min-width: 450px) {
+  .careers-images-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+  }
+}
+@media (max-width: 925px) {
+  .careers-images-container {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.careers-images-container .career-container {
+  height: 45px;
+  width: 100%;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 450px) {
+  .careers-images-container .career-container {
+    height: 154px;
+    width: 150px;
+    justify-content: space-between;
+    border: none;
+  }
+}
+.careers-images-container .career-container .image-and-line-and-text-container:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.careers-images-container .career-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  column-gap: 6px;
+  font-size: 16px;
+}
+@media (min-width: 450px) {
+  .careers-images-container .career-container div {
+    width: 98%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.careers-images-container .career-container div .image-container {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  margin: 5.5px 5.5px 5.5px 3px;
+}
+.careers-images-container .career-container div .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+@media (min-width: 450px) {
+  .careers-images-container .career-container div .image-container {
+    height: 64px;
+    width: 64px;
+    margin: 0;
+  }
+}
+.careers-images-container .career-container div .line {
+  height: 80%;
+  width: 5px;
+  border-radius: 25%;
+}
+@media (min-width: 450px) {
+  .careers-images-container .career-container div .line {
+    height: 8px;
+    width: 40px;
+    border-radius: 15%;
+    margin: 9px 0;
+  }
+}
+.careers-images-container .career-container .arrow {
+  width: 12px;
+  height: 12px;
+}
+@media (min-width: 450px) {
+  .careers-images-container .career-container .arrow {
+    display: none;
+  }
+}
+
+.career-images-and-middle-form-container-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 36px;
+  padding-bottom: 85px;
+}
+@media (max-width: 925px) {
+  .career-images-and-middle-form-container-container {
+    width: 97%;
+  }
+}
+.career-images-and-middle-form-container-container .career-images-and-middle-form-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.careers-title-container {
+  width: 100%;
+  text-align: center;
+}
+.careers-title-container h1 {
+  font-size: 46.4px;
+  margin: 0;
+}
+@media (min-width: 925px) {
+  .careers-title-container {
+    text-align: right;
+    padding-right: 70px;
+  }
+}
+@media (min-width: 1165px) {
+  .careers-title-container {
+    text-align: right;
+    padding-right: calc(98vw - 1110px);
+  }
+}
+
+.why-study-with-us-container {
+  background: url("C:/Users/Admin/Desktop/css projects/hyper-active/images/background-for-why-study-with-us.png");
+  padding-right: 15px;
+  padding-bottom: 50px;
+  width: 100%;
+  font-size: 17.6px;
+}
+.why-study-with-us-container h1 {
+  text-align: center;
+  font-size: 46.4px;
+  margin: 10px 0 50px 0;
+}
+.why-study-with-us-container .second-line {
+  font-weight: bold;
+}
+.why-study-with-us-container .third-line {
+  color: #0000ff;
+}
+.why-study-with-us-container .third-line span {
+  font-weight: bold;
+}
+.why-study-with-us-container ol {
+  padding-right: 20px;
+}
+@media (min-width: 925px) {
+  .why-study-with-us-container {
+    padding: 15px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px -30.1px 100px rgba(0, 0, 0, 0.2431372549);
+  }
+}
+@media (min-width: 925px) {
+  .why-study-with-us-container .two-blocks-container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.why-study-with-us-container .first-block,
+.why-study-with-us-container .second-block {
+  padding: 10px;
+  margin: 10px 0;
+  cursor: default;
+}
+@media (min-width: 925px) {
+  .why-study-with-us-container .first-block,
+  .why-study-with-us-container .second-block {
+    width: 50%;
+    max-width: 550px;
+    transition: all 0.5s linear;
+  }
+  .why-study-with-us-container .first-block:hover,
+  .why-study-with-us-container .second-block:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10.1px 100px black;
+  }
+}
+.why-study-with-us-container .first-block {
+  background-color: black;
+  color: white;
+}
+.why-study-with-us-container .first-block .first-two-words {
+  font-weight: bold;
+}
+.why-study-with-us-container .first-block a {
+  color: white;
+  cursor: pointer;
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+.why-study-with-us-container .second-block {
+  background-color: #eff6df;
+}
+.why-study-with-us-container .second-block .first-word {
+  font-weight: bold;
+}
+
+.here-you-will-find-our-graduated-container {
+  text-align: center;
+  padding: 50px 10px 10px;
+  width: 97%;
+}
+.here-you-will-find-our-graduated-container h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.here-you-will-find-our-graduated-container #company-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center;
+  direction: ltr;
+}
+.here-you-will-find-our-graduated-container #company-images-container div {
+  width: 100px;
+  height: 65px;
+}
+.here-you-will-find-our-graduated-container #company-images-container div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about-us-and-how-it-works-container {
+  cursor: default;
+  background: url("C:/Users/Admin/Desktop/css projects/hyper-active/images/about-us-background.png");
+  width: 100%;
+  padding: 65px 10px 10px;
+  margin-top: 50px;
+  font-size: 17.6px;
+}
+.about-us-and-how-it-works-container .about-us-title-container {
+  width: 100%;
+  text-align: center;
+}
+.about-us-and-how-it-works-container .about-us-title-container h2 {
+  font-size: 24px;
+}
+.about-us-and-how-it-works-container span {
+  font-weight: bold;
+}
+.about-us-and-how-it-works-container .how-it-works-title-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 65px;
+}
+.about-us-and-how-it-works-container .how-it-works-title-container h2 {
+  margin: 0px;
+  font-size: 46.4px;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container {
+  padding: 20px;
+}
+@media (min-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container .how-it-works-container {
+    display: grid;
+    grid-template-areas: "diagnosis-advising-and-sorting training-course" "new-career placement-process";
+    width: 1100px;
+  }
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container {
+  color: white;
+  font-size: 17.6px;
+  margin: 10px 0;
+  padding: 20px;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container h3 {
+  font-size: 20.8px;
+  margin: 0;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .title-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .title-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .title-container,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .title-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .title-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .title-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .title-container h3,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .title-container h3 {
+  font-weight: normal;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .title-container .plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .title-container .plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .title-container .plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .title-container .plus-sign {
+  color: black;
+  font-size: 37px;
+  margin-bottom: -20px 0;
+  transition: transform 0.2s linear;
+  user-select: none;
+}
+@media (min-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .title-container .plus-sign,
+  .about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .title-container .plus-sign,
+  .about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .title-container .plus-sign,
+  .about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .title-container .plus-sign {
+    display: none;
+  }
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .title-container .rotate-plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .title-container .rotate-plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .title-container .rotate-plus-sign,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .title-container .rotate-plus-sign {
+  transform: rotate(45deg);
+}
+@media (min-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container,
+  .about-us-and-how-it-works-container .how-it-works-container-container .training-course-container,
+  .about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container,
+  .about-us-and-how-it-works-container .how-it-works-container-container .new-career-container {
+    width: 550px;
+    height: 591px;
+    padding: 45px;
+    margin: 0;
+  }
+}
+@media (max-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .inner-menu-how-it-works,
+  .about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .inner-menu-how-it-works,
+  .about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .inner-menu-how-it-works,
+  .about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .inner-menu-how-it-works {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s linear;
+  }
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .inner-menu-how-it-works-show,
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .inner-menu-how-it-works-show,
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .inner-menu-how-it-works-show,
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container .inner-menu-how-it-works-show {
+  max-height: 1000px;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container {
+  background-color: #0598a8;
+  grid-area: diagnosis-advising-and-sorting;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .diagnosis-advising-and-sorting-container .triangle {
+  height: 0px;
+  width: 0px;
+  border-top: 23px solid #0598a8;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  right: 609px;
+  transform: rotate(90deg);
+  top: 70px;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container {
+  background-color: #39a4dc;
+  grid-area: training-course;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .training-course-container .triangle {
+  height: 0px;
+  width: 0px;
+  border-top: 25px solid #39a4dc;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  right: 1080px;
+  bottom: 586px;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container {
+  background-color: #06f;
+  grid-area: placement-process;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .placement-process-container .triangle {
+  height: 0px;
+  width: 0px;
+  border-top: 25px solid #06f;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  top: 648px;
+  right: 585px;
+  transform: rotate(-90deg);
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .new-career-container {
+  background-color: #213b7f;
+  grid-area: new-career;
+}
+.about-us-and-how-it-works-container .how-it-works-container-container .triangle {
+  display: none;
+}
+@media (min-width: 1205px) {
+  .about-us-and-how-it-works-container .how-it-works-container-container .triangle {
+    position: absolute;
+    display: inline-block;
+  }
+}
+
+.questions-probably-you-will-ask-container,
+.public-service-container {
+  padding: 50px 15px 60px 0;
+}
+.questions-probably-you-will-ask-container .title-container,
+.public-service-container .title-container {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 925px) {
+  .questions-probably-you-will-ask-container .title-container,
+  .public-service-container .title-container {
+    margin-bottom: 60px;
+  }
+}
+.questions-probably-you-will-ask-container .title-container h2,
+.public-service-container .title-container h2 {
+  font-size: 24px;
+  margin: 13px 0;
+}
+@media (min-width: 925px) {
+  .questions-probably-you-will-ask-container .title-container h2,
+  .public-service-container .title-container h2 {
+    margin-bottom: 60px;
+  }
+}
+.questions-probably-you-will-ask-container .all-the-questions-container,
+.public-service-container .all-the-questions-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 925px) {
+  .questions-probably-you-will-ask-container .all-the-questions-container,
+  .public-service-container .all-the-questions-container {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+  }
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container {
+  border: 0.5px solid #dbdbdb;
+  border-left: none;
+  border-right: none;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .question-container,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 18px;
+  height: 80px;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .question-container h4,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .question-container h4 {
+  font-size: 17.6px;
+  color: #007cba;
+  margin: 0;
+  font-weight: 600;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .question-container img,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .question-container img {
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .question-container .rotate-arrow,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .question-container .rotate-arrow {
+  transform: rotate(180deg);
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .inner-menu,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .inner-menu {
+  padding: 0 10px;
+  transition: all 0.2s linear;
+  max-height: 0px;
+  overflow: hidden;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .inner-menu a,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .inner-menu a {
+  color: #0000ff;
+  text-decoration-line: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+.questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container .show,
+.public-service-container .all-the-questions-container .question-and-inner-menu-container .show {
+  max-height: 100vh;
+}
+@media (min-width: 925px) {
+  .questions-probably-you-will-ask-container .all-the-questions-container .question-and-inner-menu-container,
+  .public-service-container .all-the-questions-container .question-and-inner-menu-container {
+    width: 430px;
+  }
+}
+
+.public-service-container {
+  background: url("C:/Users/Admin/Desktop/css projects/hyper-active/images/public-service-background.png");
+}
+
+.questions-probably-you-will-ask-container {
+  background-color: #fff6df;
+}
+
+footer {
+  background-color: #213b7f;
+  color: white;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+footer .form-title-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 13px;
+}
+footer .form-title-container h2 {
+  font-size: 19.2px;
+  margin: 0;
+}
+footer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 925px) {
+  footer form {
+    flex-direction: row;
+    column-gap: 10px;
+    padding-right: 20px;
+  }
+}
+footer form .input-container {
+  width: 68%;
+  height: 60px;
+  margin: 25px 0;
+  color: #373737;
+  display: flex;
+  background-color: white;
+}
+@media (min-width: 925px) {
+  footer form .input-container {
+    max-width: 209px;
+    width: 22%;
+  }
+}
+footer form .input-container label {
+  margin-left: 10px;
+  padding-right: 5px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  font-size: 14.4px;
+  align-items: center;
+  font-weight: 700;
+}
+footer form .input-container input {
+  height: 100%;
+  width: 250px;
+  border: none;
+}
+footer form .input-container input:focus {
+  outline: none;
+}
+@media (min-width: 925px) {
+  footer form .input-container input {
+    width: 68%;
+  }
+}
+footer form .input-container .seperator-container {
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+footer form .input-container .seperator-container > div {
+  background-color: #213b7f;
+  width: 100%;
+  border-radius: 20px;
+  height: 35%;
+}
+footer .checkbox-container input {
+  margin: 0px 0px 15px 4px;
+}
+footer .checkbox-container label {
+  width: 315px;
+}
+@media (min-width: 925px) {
+  footer .submit-button-container {
+    margin: 15px;
+  }
+}
+
+.whatsapp-link {
+  display: none;
+}
+@media (min-width: 925px) {
+  .whatsapp-link {
+    display: inline-block;
+    padding-right: 7px;
+    padding-top: 1px;
+    position: fixed;
+    bottom: -5px;
+    right: 1vw;
+    background-color: #0066ff;
+    height: 35px;
+    width: 255px;
+    font-size: 20.8px;
+    border: 2px solid #25d366;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  }
+  .whatsapp-link a {
+    margin-right: 3px;
+  }
+}
+
+.contact-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0066ff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: flex;
+  height: 60px;
+}
+.contact-buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+.contact-buttons > div a:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.contact-buttons > div a {
+  margin-right: 5px;
+}
+.contact-buttons > :first-child {
+  border-left: 1.5px solid white;
+}
+.contact-buttons > :first-child img {
+  height: 28px;
+  width: 24px;
+  margin-bottom: -2px;
+}
+@media (min-width: 925px) {
+  .contact-buttons {
+    display: none;
+  }
+}
+
+.modal-form-container {
+  transition: all 0.8s ease-out;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-form-container #modal-form {
+  position: absolute;
+  height: 605.85px;
+  width: 617.39px;
+  background: url("C:/Users/Admin/Desktop/css projects/hyper-active/images/modal-background.png");
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+.modal-form-container #modal-form .close-button-container {
+  margin: auto;
+  width: 5%;
+  margin-bottom: 8%;
+}
+.modal-form-container #modal-form .close-button-container button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-form-container #modal-form .close-button-container button div {
+  background-color: black;
+  width: 2px;
+  height: 30px;
+}
+.modal-form-container #modal-form .close-button-container button :first-child {
+  transform: rotate(130deg);
+}
+.modal-form-container #modal-form .close-button-container button :last-child {
+  transform: rotate(45deg);
+}
+.modal-form-container #modal-form .modal-title-container {
+  width: 68%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10%;
+  padding-left: 10px;
+}
+.modal-form-container #modal-form .modal-title-container h2 {
+  color: #154b9c;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.modal-form-container #modal-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+.modal-form-container #modal-form form input {
+  width: 400px;
+  height: 40.41px;
+  padding: 1px 5px 1px 2px;
+  color: #040ea3;
+  font-weight: 800;
+  box-shadow: 0 0 4px -1px #213b7f;
+  border: none;
+}
+.modal-form-container #modal-form .checkbox-container {
+  color: #040ea3;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.modal-form-container #modal-form .checkbox-container input {
+  margin: 2px 0px 1px 3px;
+}
+.modal-form-container #modal-form .submit-button {
+  width: 210px;
+  height: 50px;
+  color: white;
+  background-color: #154b9c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 20.8px;
+}
+@media (max-width: 450px) {
+  .modal-form-container {
+    display: none;
+  }
+}
+@media (max-height: 450px) {
+  .modal-form-container {
+    display: none;
+  }
+}
+
+.modal-thankyou-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 200;
+}
+.modal-thankyou-container > div {
+  background-color: white;
+  font-size: 38.4px;
+  position: relative;
+  padding: 25px 15px 0px 21px;
+  height: 400px;
+  width: 600px;
+}
+@media (max-width: 925px) {
+  .modal-thankyou-container > div {
+    font-size: 24px;
+    padding: 25px 15px 0;
+  }
+}
+.modal-thankyou-container > div .modal-title-container {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.modal-thankyou-container > div .modal-title-container h3 {
+  font-size: 4rem;
+  margin: 0;
+}
+.modal-thankyou-container > div .close-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  left: 21px;
+  top: 16px;
+}
+.modal-thankyou-container > div .close-button div {
+  background-color: black;
+  width: 4px;
+  height: 19px;
+}
+.modal-thankyou-container > div .close-button :first-child {
+  transform: rotate(41deg);
+  position: relative;
+  bottom: 0.6px;
+  left: 0.9px;
+}
+.modal-thankyou-container > div .close-button :last-child {
+  transform: rotate(141deg);
+  position: relative;
+  bottom: 0.2px;
+  left: 4.6px;
+}
+.modal-thankyou-container > div .checkmark-sign-container {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+}
+@media (max-width: 925px) {
+  .modal-thankyou-container > div .checkmark-sign-container {
+    position: static;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 22px;
+    padding-left: 21px;
+  }
+}
+.modal-thankyou-container > div .checkmark-sign-container .checkmark-sign {
+  border-radius: 100%;
+  border: 8px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+}
+.modal-thankyou-container > div .checkmark-sign-container .checkmark-sign > div {
+  border: 8.5px solid green;
+  background-color: white;
+  border-left: none;
+  border-bottom: none;
+  height: 23px;
+  width: 37px;
+  transform: rotate(132deg);
+  position: relative;
+  bottom: 5.8px;
+  left: -0.5px;
+}
+
+.invalid-input::placeholder {
+  color: red;
+}
+
+.modal-form-close {
+  position: fixed;
+  top: -200vh;
+}
+
+.none {
+  display: none;
+}
